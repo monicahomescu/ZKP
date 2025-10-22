@@ -19,4 +19,4 @@ template VerifyCredentials(passwordLength) {
     hash.out === hashedCredentials;
 }
 
-component main = VerifyCredentials(4);
+component main {public[username, hashedCredentials]} = VerifyCredentials(4);
